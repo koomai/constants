@@ -1,6 +1,9 @@
 # Constants  
 
-Constants is a helper package for validating and retrieving application-level global constants.
+Constants is a helper package for validating and retrieving application-level global constants.  
+
+[![Build Status](https://travis-ci.org/koomai/constants.svg?branch=master)](https://travis-ci.org/koomai/constants) 
+[![StyleCI](https://styleci.io/repos/113857749/shield?branch=master)](https://styleci.io/repos/113857749)
 
 ## Contents
 
