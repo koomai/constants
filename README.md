@@ -47,9 +47,13 @@ class LeadStatus extends AbstractConstants
 
 3. When doing look-ups, e.g. via user input or as a parameter in a method, use the static `get()` method:  
 
-`LeadStatus::get($status)`
+`LeadStatus::get($status)`  
 
-It will return `$value` if it exists or throw an `InvalidConstantException`.
+It will return `$status` if it's a valid constant value or throw an `InvalidConstantException`.
+
+4. To retrieve an array of all the constants in a class:  
+
+`LeadStatus::all()`
 
 ## Changelog
 
