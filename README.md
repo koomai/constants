@@ -1,13 +1,11 @@
 # Constants  
 
-Constants is helper package that helps you manage your application-level global constants.
+Constants is a helper package for validating and retrieving application-level global constants.
 
 ## Contents
 
 - [Installation](#installation)
-	- [Setting up the :service_name service](#setting-up-the-:service_name-service)
 - [Usage](#usage)
-	- [Available Message methods](#available-message-methods)
 - [Changelog](#changelog)
 - [Testing](#testing)
 - [Contributing](#contributing)
