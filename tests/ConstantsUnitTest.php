@@ -5,7 +5,7 @@ namespace Koomai\Constants\Tests;
 use Koomai\Constants\InvalidConstantException;
 use PHPUnit\Framework\TestCase;
 
-class ConstantsTest extends TestCase
+class ConstantsUnitTest extends TestCase
 {
     /**
      * @test
