@@ -14,7 +14,7 @@ abstract class Constants
      */
     public static function get($value)
     {
-        $constant = array_search($value, static::getConstants());
+        $constant = array_search($value, static::all());
 
         if (!$constant) {
             throw new InvalidConstantException("{$value} is not a valid value");
@@ -30,7 +30,7 @@ abstract class Constants
      * @return array
      * @throws \ReflectionException
      */
-    protected static function getConstants(): array
+    public static function all(): array
     {
         return (new ReflectionClass(new static))->getConstants();
     }
