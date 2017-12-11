@@ -1,0 +1,36 @@
+{
+    "name": "koomai/constants",
+    "description": "An easy and clean way to manage application-level global constants",
+    "homepage": "https://github.com/laravel-notification-channels/:package_name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sid K",
+            "email": "sid@koomai.net",
+            "homepage": "http://koomai.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Koomai\\Constants\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Koomai\\Constants\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
