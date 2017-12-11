@@ -7,6 +7,22 @@ use PHPUnit\Framework\TestCase;
 
 class ConstantsUnitTest extends TestCase
 {
+    
+    /**
+     * @test
+     */
+    public function should_return_all_constants_as_an_array()
+    {
+        $constants = [
+            'ALPHA' => 'Alpha',
+            'BRAVO' => 'Bravo',
+            'CHARLIE' => 'Charlie',
+        ];
+        
+        $this->assertEquals($constants, Stub::all());
+    }
+    
+    
     /**
      * @test
      */
