@@ -18,7 +18,7 @@ Constants is a helper package for validating and retrieving application-level gl
 
 ## Installation
 
-`composer require koomai/constants:1.0^`
+`composer require koomai/constants:^1.0`
 
 ## Usage
 
