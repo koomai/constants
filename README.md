@@ -70,6 +70,7 @@ $ composer test
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
+- [Rohan Deshpande](https://github.com/rohan-deshpande)
 - [laravel-notification-channels/skeleton](https://github.com/laravel-notification-channels/skeleton)
 
 ## License
