@@ -32,6 +32,6 @@ abstract class Constants
      */
     public static function all(): array
     {
-        return (new ReflectionClass(new static))->getConstants();
+        return (new ReflectionClass(get_called_class()))->getConstants();
     }
 }
