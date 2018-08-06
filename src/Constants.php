@@ -34,4 +34,16 @@ abstract class Constants
     {
         return (new ReflectionClass(get_called_class()))->getConstants();
     }
+
+    /**
+     * Determines if the value exists
+     *
+     * @param $value
+     *
+     * @return bool
+     */
+    public static function has($value): bool
+    {
+        return in_array($value, static::all(), true);
+    }
 }

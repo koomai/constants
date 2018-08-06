@@ -22,7 +22,6 @@ class ConstantsUnitTest extends TestCase
         $this->assertEquals($constants, Stub::all());
     }
     
-    
     /**
      * @test
      */
@@ -44,5 +43,14 @@ class ConstantsUnitTest extends TestCase
         $this->expectExceptionMessage("{$value} is not a valid value");
 
         Stub::get($value);
+    }
+
+    /**
+     * @test
+     */
+    public function should_determine_if_value_exists()
+    {
+        $this->assertTrue(Stub::has('Alpha'));
+        $this->assertFalse(Stub::has('Delta'));
     }
 }
