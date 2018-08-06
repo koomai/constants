@@ -17,7 +17,7 @@ abstract class Constants
         $constant = array_search($value, static::all(), true);
 
         if (!$constant) {
-            throw new InvalidConstantException("{$value} is not a valid value");
+            throw new InvalidConstantException("{$value} is not a valid value for " . get_called_class());
         }
 
         return $value;

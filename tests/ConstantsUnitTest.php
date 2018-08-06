@@ -40,7 +40,7 @@ class ConstantsUnitTest extends TestCase
         $value = 'Delta';
 
         $this->expectException(InvalidConstantException::class);
-        $this->expectExceptionMessage("{$value} is not a valid value");
+        $this->expectExceptionMessage("{$value} is not a valid value for Koomai\\Constants\\Tests\\Stub");
 
         Stub::get($value);
     }

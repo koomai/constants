@@ -1,6 +1,6 @@
 # Constants  
 
-Constants is a helper package for validating and retrieving application-level global constants.  
+Constants is a helper package for validating and retrieving application-level global constants/enums.
 
 [![Build Status](https://travis-ci.org/koomai/constants.svg?branch=master)](https://travis-ci.org/koomai/constants) 
 [![StyleCI](https://styleci.io/repos/113857749/shield?branch=master)](https://styleci.io/repos/113857749)
@@ -51,7 +51,11 @@ class LeadStatus extends AbstractConstants
 
 It will return `$status` if it's a valid constant value or throw an `InvalidConstantException`.
 
-4. To retrieve an array of all the constants in a class:  
+4. If you don't want an exception thrown, you can check if the value exists first:
+
+`LeadStatus::has($status)`
+
+5. To retrieve an array of all the constants in a class:  
 
 `LeadStatus::all()`
 
