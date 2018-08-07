@@ -6,6 +6,9 @@ use ReflectionClass;
 
 abstract class Constants
 {
+    /** @var array */
+    protected static $cache = [];
+
     /**
      * @param mixed $value
      *
@@ -17,14 +20,14 @@ abstract class Constants
         $constant = array_search($value, static::all(), true);
 
         if (!$constant) {
-            throw new InvalidConstantException("{$value} is not a valid value for " . get_called_class());
+            throw new InvalidConstantException("{$value} is not a valid value in " . get_called_class());
         }
 
         return $value;
     }
 
     /**
-     * Returns an associative array of constants
+     * Caches and returns an associative array of constants
      * in the current class
      *
      * @return array
@@ -32,7 +35,13 @@ abstract class Constants
      */
     public static function all(): array
     {
-        return (new ReflectionClass(get_called_class()))->getConstants();
+        $className = get_called_class();
+
+        if (!array_key_exists($className, static::$cache)) {
+            static::$cache[$className] = (new ReflectionClass($className))->getConstants();
+        }
+
+        return static::$cache[$className];
     }
 
     /**
