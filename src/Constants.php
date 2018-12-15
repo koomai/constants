@@ -45,6 +45,17 @@ abstract class Constants
     }
 
     /**
+     * Return just the values of all the constants
+     * in the current class
+     *
+     * @return array
+     */
+    public static function values(): array
+    {
+        return array_values(static::all());
+    }
+
+    /**
      * Determines if the value exists
      *
      * @param $value

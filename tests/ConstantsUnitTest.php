@@ -21,6 +21,20 @@ class ConstantsUnitTest extends TestCase
         
         $this->assertEquals($constants, Stub::all());
     }
+
+        /**
+     * @test
+     */
+    public function should_return_all_constants_values_as_an_array()
+    {
+        $constants = [
+            'Alpha',
+            'Bravo',
+            'Charlie',
+        ];
+
+        $this->assertEquals($constants, Stub::values());
+    }
     
     /**
      * @test
