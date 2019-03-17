@@ -35,6 +35,20 @@ class ConstantsUnitTest extends TestCase
 
         $this->assertEquals($constants, Stub::values());
     }
+
+    /**
+     * @test
+     */
+    public function should_return_all_constants_keys_as_an_array()
+    {
+        $keys = [
+            'A',
+            'B',
+            'C',
+        ];
+
+        $this->assertEquals($keys, Stub::keys());
+    }
     
     /**
      * @test

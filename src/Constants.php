@@ -49,10 +49,22 @@ abstract class Constants
      * in the current class
      *
      * @return array
+     * @throws \ReflectionException
      */
     public static function values(): array
     {
         return array_values(static::all());
+    }
+
+    /**
+     * Return an array of just the constant names
+     *
+     * @return array
+     * @throws \ReflectionException
+     */
+    public static function keys(): array
+    {
+        return array_keys(static::all());
     }
 
     /**
