@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 - 2019-03-17
+
+- `values()` method to return just the values without the keys
+
 ## 1.1.0 - 2018-08-07
 
 ### Added
