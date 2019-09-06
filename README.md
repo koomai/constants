@@ -1,3 +1,10 @@
+# DEPRECATED!
+
+This package has been deprecated. Check out the following packages:
+
+- https://github.com/myclabs/php-enum
+- https://github.com/BenSampo/laravel-enum
+
 # Constants  
 
 Constants is a helper package for validating and retrieving application-level global constants/enums.
